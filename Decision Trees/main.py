@@ -1,4 +1,7 @@
-import pandas as pd
-import  numpy as np
+from Data_cleaning import X_train,y_train
+print(X_train)
+print(y_train)
 
-df = pd.read_csv(r'C:\Users\j\Downloads\ML-Journey\Decision Trees\loan_200_people.csv').drop(columns = ['person'])
+class Decision_Trees:
+    def best_split(self):
+        pass
