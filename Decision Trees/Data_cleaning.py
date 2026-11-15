@@ -1,8 +1,9 @@
 import pandas as pd
 import  numpy as np
 from sklearn.model_selection import train_test_split
-
-df = pd.read_csv(r'C:\Users\j\Downloads\loan_2000_people.csv').drop(columns = ['person'])
+from pathlib import Path
+csv_path = Path(__file__).parent / 'loan_2000_people.csv'
+df = pd.read_csv(csv_path).drop(columns=['person'])
 
 
 df_full_train, df_test = train_test_split(df, test_size=0.2, random_state=11)
